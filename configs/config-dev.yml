@@ -1,0 +1,14 @@
+debug: false
+pipelines:
+  - name: pipe-common
+    concurrent: 10
+    plugins:
+      - kafka-common
+      - easeservice-common
+      - es-common
+plugins:
+  - kind: KafkaInput
+    name: Kakfa-common
+    brokers: ['localhost:9092']
+    topics: ['access-log','app-log']
+    fromBegin: false
