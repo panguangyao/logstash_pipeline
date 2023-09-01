@@ -1,11 +1,11 @@
 # logstash_pipeline
 
 ### source
-file
+file  
 kafka
 
 ### sink
-mysql
-elasticsearch
-prometheus
-file
+mysql  
+elasticsearch  
+prometheus  
+file  
